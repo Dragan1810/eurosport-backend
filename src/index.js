@@ -38,10 +38,11 @@ server.express.use(async (req, res, next) => {
 const serverOptions = {
   cors: {
     credentials: true,
-    origin:
-      process.env.NODE_ENV === 'development'
-        ? process.env.FRONTEND_URL_LOCAL
-        : process.env.FRONTEND_URL
+    origin: [
+      'https://eurosport.now.sh/:1',
+      'https://eurosport.now.sh',
+      'http://localhost:7777'
+    ]
   }
 };
 
