@@ -41,7 +41,9 @@ const serverOptions = {
     origin: [
       'https://eurosport.now.sh/:1',
       'https://eurosport.now.sh',
-      'http://localhost:7777'
+      'http://localhost:7777',
+      'http://localhost:3000',
+      'https://localhost:3000'
     ]
   }
 };
